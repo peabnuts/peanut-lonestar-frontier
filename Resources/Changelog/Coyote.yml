@@ -4165,3 +4165,33 @@ Entries:
   id: 456
   time: '2026-10-01T16:30:13.0000000+00:00'
   url: https://github.com/LoneStarSS14/lonestar-frontier/pull/216
+- author: Jakumba
+  changes:
+    - type: Tweak
+      message: Whispers and subtle messages can no longer be seen by ghosts,
+  id: 457
+  time: '2026-10-03T20:46:59.0000000+00:00'
+  url: https://github.com/LoneStarSS14/lonestar-frontier/pull/220
+- author: Synthestra
+  changes:
+    - type: Tweak
+      message: >-
+        Construction Bag now allows Plumbing Assemblies, any construction
+        electronic, computer board, and practially any carriable atmos
+        piping-related item
+    - type: Fix
+      message: >-
+        Increased Construction Bag's max item size to Large, which fixes not
+        allowing Flatpacks to be stored inside.
+  id: 458
+  time: '2026-10-03T21:03:46.0000000+00:00'
+  url: https://github.com/LoneStarSS14/lonestar-frontier/pull/217
+- author: tenmillimaster
+  changes:
+    - type: Fix
+      message: >-
+        Added encryption keys to the station secretary role and shortband to
+        guild leader.
+  id: 459
+  time: '2026-10-03T21:04:53.0000000+00:00'
+  url: https://github.com/LoneStarSS14/lonestar-frontier/pull/212
