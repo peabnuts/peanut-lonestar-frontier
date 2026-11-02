@@ -50,14 +50,13 @@
 - type: entity # TODO: switch to .25 rifle (caseless)
   id: NFWeaponRifleAssaultM90GrenadeLauncher
   parent: [ NFBaseWeaponRifleAssaultChamber20, NFBaseWeaponFrameRifleAssaultCybersun ]
-  name: M-90gl
-  description: |-
-    An older bullpup carbine model, with an attached underbarrel grenade launcher. An illegal firearm often used by Syndicate agents.
+  name: M-90 carbine # LoneStar
+  description: "An older bullpup carbine model, long discarded by modern militaries for more conventional and cheaper rifles. An old standby often used by Syndicate agents when resupply is uncertain." # LoneStar
   components:
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Rifles/carbine.rsi
+    sprite: _LoneStar/Objects/Weapons/Guns/Rifles/m90.rsi # LoneStar
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/carbine.rsi
+    sprite: _LoneStar/Objects/Weapons/Guns/Rifles/m90.rsi # LoneStar
 
 - type: entity
   id: NFWeaponRifleAssaultLecter
@@ -131,6 +130,29 @@
   components: *vulcanComponents
 
 #region Frontier
+- type: entity
+  id: NFWeaponRifleAssaultRomulan
+  parent: [ BaseC3PirateContraband, NFBaseWeaponRifleAssaultChamber20, NFBaseWeaponFrameRifleAssaultFrontierGunsmith ]
+  name: Romulan
+  description: |-
+    Yarrr, a retrofitted Vulcan befitting of a pirate!
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Rifles/romulan.rsi
+  - type: Clothing
+    sprite: _NF/Objects/Weapons/Guns/Rifles/romulan.rsi
+  - type: Gun
+    minAngle: 2.8
+    maxAngle: 13.9
+    fireRate: 3.6
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: true
+  - type: NFWeaponDetails
+    class: weapon-details-class-assault-rifle
+    manufacturer: weapon-details-manufacturer-steelbolt-tool-forge
+
 - type: entity
   id: NFWeaponRifleAssaultGestio
   parent: [ BaseC2Contraband, NFBaseWeaponRifleAssaultChamber30LowCapacity, NFBaseWeaponFrameRifleAssaultFrontierGunsmith ]

@@ -255,6 +255,7 @@
     whitelist:
       tags:
       - NFBlueprintProtolathe
+      - NFBlueprintAdvanced
   - type: ContainerContainer
     containers:
       machine_board: !type:Container
@@ -515,6 +516,7 @@
       whitelist: # Frontier
         tags: # Frontier
         - NFBlueprintMercenaryTechfab # Frontier
+        - NFBlueprintAdvanced # Frontier
 
 - type: entity
   id: MedicalTechFab
@@ -582,6 +584,7 @@
     whitelist: # Frontier
       tags: # Frontier
       - NFBlueprintMedicalTechfab # Frontier
+      - NFBlueprintAdvanced # Frontier
 
 - type: entity
   parent: BaseLathe
@@ -627,6 +630,7 @@
     - ClothingCollars # Floof
     - ClothingBags # Coyote
     - ClothingTowels # Coyote
+    - NFUniformChaplainStatic # Frontier
     dynamicPacks: # Frontier
     - NFPouches # Frontier
   - type: EmagLatheRecipes
@@ -708,15 +712,7 @@
     - beaker_slot
     spriteLayers:
     - beaker
-  # End Frontier: emag lathe recipes, item mapper
-  # Coyote: Biogenerator Buffer System
-  - type: BiogeneratorBuffer
-    current: 0
-    max: 100
-    regenAmount: 5
-    regenInterval: 10
-  # End Coyote
-  - type: OreSiloClient #LoneStar
+  - type: OreSiloClient # LoneStar
 
 - type: entity
   parent: [ BaseLathe, BaseLatheMagnet ]

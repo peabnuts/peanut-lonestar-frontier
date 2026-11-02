@@ -1,25 +1,72 @@
 - type: entity
-  parent: ClothingHandsGlovesSyntheticBase
-  id: ClothingHandsGlovesColorSatinWhite
-  name: white satin gloves
+  parent: [ ClothingHandsGlovesSyntheticBase, ClothingHandsColorableMonoInhand]
+  id: ClothingHandsGlovesColorableSilk
+  name: silk gloves (colorable)
   description: For when regular white gloves are too bland.
   components:
   - type: Sprite
-    sprite: _LoneStar/Clothing/Hands/Gloves/white-satin.rsi
+    sprite: _LoneStar/Clothing/Hands/Gloves/colorable.rsi
   - type: Clothing
-    sprite: _LoneStar/Clothing/Hands/Gloves/white-satin.rsi
+    sprite: _LoneStar/Clothing/Hands/Gloves/colorable.rsi
   - type: Fiber
-    fiberColor: fibers-white
+    fiberColor: fibers-chameleon
+  - type: ColorableClothing
+    randomOnCreation: false
+    mappedColors:
+      Base: LSSilks
 
 - type: entity
-  parent: ClothingHandsGlovesColorSatinWhite
-  id: ClothingHandsGlovesColorSatinWhiteLong
-  name: long white satin gloves
+  parent: [ ClothingHandsGlovesColorableSilk, ClothingHandsColorableMonoInhand]
+  id: ClothingHandsGlovesLongColorableSilk
+  name: long silk gloves (colorable)
   description: For when regular white gloves are too bland, now with elbow coverage.
   components:
   - type: Sprite
-    sprite: _LoneStar/Clothing/Hands/Gloves/white-satin-long.rsi
+    sprite: _LoneStar/Clothing/Hands/Gloves/colorable-long.rsi
   - type: Clothing
-    sprite: _LoneStar/Clothing/Hands/Gloves/white-satin-long.rsi
+    sprite: _LoneStar/Clothing/Hands/Gloves/colorable-long.rsi
   - type: Fiber
-    fiberColor: fibers-white
+    fiberColor: fibers-chameleon
+
+- type: entity
+  parent: [ ClothingHandsGlovesSyntheticBase, ClothingHandsColorableMonoInhand]
+  id: ClothingHandsGlovesColorableCotton
+  name: cotton gloves (colorable)
+  description: For when regular white gloves need some more color.
+  components:
+  - type: Sprite
+    sprite: _LoneStar/Clothing/Hands/Gloves/colorable.rsi
+  - type: Clothing
+    sprite: _LoneStar/Clothing/Hands/Gloves/colorable.rsi
+  - type: Fiber
+    fiberColor: fibers-chameleon
+  - type: ColorableClothing
+    randomOnCreation: false
+
+- type: entity
+  parent: [ ClothingHandsGlovesColorableCotton, ClothingHandsColorableMonoInhand]
+  id: ClothingHandsGlovesLongColorableCotton
+  name: long cotton gloves (colorable)
+  description: For when regular white gloves need some more color, now with elbow coverage.
+  components:
+  - type: Sprite
+    sprite: _LoneStar/Clothing/Hands/Gloves/colorable-long.rsi
+  - type: Clothing
+    sprite: _LoneStar/Clothing/Hands/Gloves/colorable-long.rsi
+  - type: Fiber
+    fiberColor: fibers-chameleon
+
+- type: entity
+  parent: ClothingHandsGlovesSyntheticBase
+  id: ClothingHandsGlovesMittens
+  name: mittens
+  description: The other kind of insulating glove. Will protect your hands from the shock of freezing cold, but not much else.
+  components:
+  - type: Sprite
+    sprite: _DEN/Clothing/Hands/Gloves/mittens.rsi
+  - type: Clothing
+    sprite: _DEN/Clothing/Hands/Gloves/mittens.rsi
+  - type: Fiber
+    fiberColor: fibers-grey
+  - type: TemperatureProtection
+    coolingCoefficient: 0.8

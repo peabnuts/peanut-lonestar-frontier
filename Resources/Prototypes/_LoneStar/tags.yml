@@ -22,3 +22,8 @@
 - type: Tag
   id: RechargerBlacklist
 
+- type: Tag
+  id: PomBoll
+
+- type: Tag
+  id: Scroll
